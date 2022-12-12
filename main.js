@@ -66,7 +66,7 @@ async function kruskal(){
             }
         });
     });
-    await sleep(50)
+    await sleep(10)
     } //here
     //TODO end
 }
