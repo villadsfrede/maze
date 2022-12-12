@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Rubik&display=swap');
+
 body{
     padding: 2rem;
     margin: 0;
@@ -9,6 +11,30 @@ body{
     text-align: center;
 }
 
+#title{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#controls{
+    text-align: center;
+    margin: 2rem;
+}
+
+input[type=button]{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background: none;
+}
+
+input[type=button]:hover{
+    color: #00ff2f;
+}
+
 html{
     font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
 }

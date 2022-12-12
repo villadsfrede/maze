@@ -1,7 +1,9 @@
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
+var start = document.getElementById("start")
+start.addEventListener("click", kruskal)
 
-var gS = 25;
+var gS = 50;
 var maze = [];
 var wall = [];
 
@@ -10,6 +12,9 @@ window.addEventListener("load", () => {
 })
 
 async function kruskal(){
+    clear()
+    var maze = [];
+    var wall = [];
     //GENERATION OF MAZE AND WALLS
     for(let x = 0; x < (canvas.width/gS); x++) {
         for(let y = 0; y < (canvas.height/gS); y++){
@@ -66,7 +71,7 @@ async function kruskal(){
             }
         });
     });
-    await sleep(10)
+    await sleep(5)
     } //here
     //TODO end
 }
@@ -75,6 +80,14 @@ function block(x, y) {
     ctx.beginPath()
     ctx.rect(x*gS, y*gS, gS, gS)
     ctx.fillStyle = "white";
+    ctx.fill()
+    ctx.closePath();
+}
+
+function clear(){
+    ctx.beginPath()
+    ctx.rect(0, 0, canvas.width, canvas.height)
+    ctx.fillStyle = "black";
     ctx.fill()
     ctx.closePath();
 }
