@@ -3,12 +3,12 @@ var ctx = canvas.getContext("2d");
 var start = document.getElementById("start")
 start.addEventListener("click", kruskal)
 
-var gS = 50;
+var gS = 25;
 var maze = [];
 var wall = [];
 
 window.addEventListener("load", () => {
-    kruskal();
+    //kruskal();
 })
 
 async function kruskal(){
@@ -71,7 +71,7 @@ async function kruskal(){
             }
         });
     });
-    await sleep(5)
+    //await sleep(100)
     } //here
     //TODO end
 }

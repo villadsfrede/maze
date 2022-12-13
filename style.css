@@ -29,12 +29,23 @@ input[type=button]{
     background: none;
 }
 
-input[type=button]:hover{
-    color: #00ff2f;
+input[type=number]{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background: none;
+    border: 2px solid #ffffff;
+    text-align: right;
 }
 
 html{
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
