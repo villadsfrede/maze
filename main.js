@@ -1,7 +1,7 @@
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 var start = document.getElementById("start")
-start.addEventListener("click", kruskal)
+start.addEventListener("click", generate)
 
 var gS = 25;
 var maze = [];
@@ -10,6 +10,15 @@ var wall = [];
 window.addEventListener("load", () => {
     //kruskal();
 })
+
+function generate(){
+    var x = document.getElementById("x").value;
+    var y = document.getElementById("y").value;
+    gS = document.getElementById("gS").value;
+    canvas.width = x*gS;
+    canvas.height = y*gS;
+    kruskal()
+}
 
 async function kruskal(){
     clear()
