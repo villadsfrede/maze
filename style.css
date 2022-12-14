@@ -14,19 +14,28 @@ body{
 #title{
     font-size: 1rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 #controls{
-    text-align: center;
-    margin: 2rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0.2rem;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#controls > p{
+    color: #ffffff;
 }
 
 input[type=button]{
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
-    color: #e70f0f;
+    color: #ffffff;
     background: none;
+    justify-self: end;
 }
 
 input[type=number]{
