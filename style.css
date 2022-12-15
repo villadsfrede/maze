@@ -24,6 +24,7 @@ body{
     grid-gap: 0.2rem;
     margin-left: 25%;
     margin-right: 25%;
+    margin-bottom: 2rem;
 }
 
 #controls > p{
@@ -35,7 +36,8 @@ input[type=button]{
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     background: none;
-    justify-self: end;
+    text-align: center;
+    grid-column: 2;
 }
 
 input[type=number]{

@@ -1,7 +1,9 @@
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 var start = document.getElementById("start")
+var solve = document.getElementById("solve")
 start.addEventListener("click", generate)
+solve.addEventListener("click", graph)
 
 var gS = 25;
 var maze = [];
@@ -22,8 +24,8 @@ function generate(){
 
 async function kruskal(){
     clear()
-    var maze = [];
-    var wall = [];
+    maze = [];
+    wall = [];
     //GENERATION OF MAZE AND WALLS
     for(let x = 0; x < (canvas.width/gS); x++) {
         for(let y = 0; y < (canvas.height/gS); y++){
@@ -103,4 +105,10 @@ function clear(){
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function graph(){
+    console.log(maze[0])
+
+    graph = [];
 }
